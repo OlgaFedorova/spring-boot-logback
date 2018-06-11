@@ -1,7 +1,6 @@
 dependencies{
-    compile 'net.logstash.logback:logstash-logback-encoder:4.8'
+    compile 'net.logstash.logback:logstash-logback-encoder:5.1'
 }
 
-bootRepackage.enabled = false
-bootRun.enabled = false
-findMainClass.enabled = false
+jar.enabled = true
+bootJar.enabled = false

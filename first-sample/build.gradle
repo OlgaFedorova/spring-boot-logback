@@ -1,3 +1,12 @@
+apply plugin: 'com.palantir.docker'
+
 dependencies {
     compile project(':config-log')
+}
+
+docker {
+    dependsOn build
+    name "${project.group}/${bootJar.baseName}"
+    files bootJar.archivePath
+    buildArgs(['JAR_FILE': "${bootJar.archiveName}"])
 }

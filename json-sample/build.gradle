@@ -1,3 +1,4 @@
 dependencies {
     compile project(':config-log')
 }
+evaluationDependsOn(':config-log')
