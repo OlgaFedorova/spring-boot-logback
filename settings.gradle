@@ -1,0 +1,5 @@
+rootProject.name = 'spring-boot-logback'
+
+include 'config-log'
+include 'first-sample'
+include 'second-sample'

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: second-sample
+  main:
+    banner-mode: "off"
+
+server:
+  port: 8081
+
+#######################################################
+# Конфигурирование логирования
+######################################################
+logging:
+  config: classpath:logback-file.xml
+  # Каталог для хранения логов
+  logDir: /home/olga/log
+  # История в днях, максимальный объем логов распространяется на количество дней
+  maxHistory: 30
+  # Максимальный размер логов
+  totalSizeCap: 40KB
+  # Максимальный размер одного файла
+  maxFileSize: 15KB
+  # Шаблон выводимой информации
+  logPattern: "%d %-4relative [%thread] %-5level %logger{35} - %msg%n"
