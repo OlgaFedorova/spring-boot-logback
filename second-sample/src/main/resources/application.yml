@@ -21,4 +21,4 @@ logging:
   # Максимальный размер одного файла
   maxFileSize: 15KB
   # Шаблон выводимой информации
-  logPattern: "%d %-4relative [%thread] %-5level %logger{35} - %msg%n"
+  logPattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-4relative ${spring.application.name} [%thread] %-5level %logger{35} - %msg%n"
